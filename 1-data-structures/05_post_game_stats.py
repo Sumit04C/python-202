@@ -15,8 +15,9 @@ positions = [player["position"] for player in players_data]
 print("Player Positions:", positions)
 
 # Task 3: Update Player Statistics
-players_data[0]["yards_gained"] += 50
+players_data[0]["yards_gained"] += 50 #TypeError: can only concatenate str (not "int") to str
 players_data[0]["touchdowns"] += 1
+
 
 # Task 4: Calculate Average Stats
 average_yards = sum(player["yards_gained"] for player in players_data) / len(players_data)
